@@ -6,32 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".Server">
+
 
     <Button
-        android:id="@+id/bluetooth_button"
+        android:id="@+id/start_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:onClick="turnBTon"
-        android:text="Turn Bluetooth On" />
+        android:onClick="start"
+        android:text="Start Service" />
 
     <Button
-        android:id="@+id/client_button"
+        android:id="@+id/discoverable_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Client"
-        android:onClick="client"/>
-
-    <Button
-        android:id="@+id/server_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Server"
-        android:onClick="server"/>
-
-
+        android:onClick="makeDiscoverable"
+        android:text="Make discoverable" />
 
 </LinearLayout>
